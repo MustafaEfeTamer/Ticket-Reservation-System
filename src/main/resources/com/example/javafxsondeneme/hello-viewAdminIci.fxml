@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxsondeneme.Admin">
+   <children>
+      <Pane layoutX="16.0" layoutY="11.0" prefHeight="577.0" prefWidth="770.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="button1" layoutX="63.0" layoutY="38.0" mnemonicParsing="false" onAction="#firmaGoster" prefHeight="25.0" prefWidth="189.0" text="Var Olan Firmaları Görüntüle" />
+            <Button fx:id="button2" layoutX="522.0" layoutY="38.0" mnemonicParsing="false" onAction="#hizmetBedeli" prefHeight="25.0" prefWidth="174.0" text="Hizmet Bedeli" />
+            <Button fx:id="button3" layoutX="63.0" layoutY="297.0" mnemonicParsing="false" onAction="#yeniFirmaKaydi" prefHeight="25.0" prefWidth="189.0" text="Yeni Firma Kaydı" />
+            <Button fx:id="button4" layoutX="538.0" layoutY="297.0" mnemonicParsing="false" onAction="#firmaSil" prefHeight="25.0" prefWidth="151.0" text="Firma Sil" />
+            <Label fx:id="sonuc1" alignment="CENTER" layoutX="61.0" layoutY="74.0" prefHeight="216.0" prefWidth="211.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="sonuc3" alignment="CENTER" layoutX="55.0" layoutY="346.0" prefHeight="222.0" prefWidth="211.0" />
+            <Label fx:id="sonuc4" alignment="CENTER" layoutX="504.0" layoutY="351.0" prefHeight="216.0" prefWidth="219.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="sonuc2" alignment="CENTER" layoutX="509.0" layoutY="88.0" prefHeight="186.0" prefWidth="200.0" />
+            <TextField fx:id="silincekFirma" alignment="CENTER" layoutX="539.0" layoutY="351.0" promptText="Silinecek Firma" />
+            <TextField fx:id="eklenecekFirmaAd" alignment="CENTER" layoutX="86.0" layoutY="348.0" prefHeight="8.0" prefWidth="149.0" promptText="Eklenecek Firma Adı" />
+            <TextField fx:id="eklenecekFirmaSifre" alignment="CENTER" layoutX="86.0" layoutY="373.0" prefHeight="7.0" prefWidth="149.0" promptText="Eklenecek Firma Şifresi" />
+            <TextField fx:id="hizmetBedeli" alignment="CENTER" layoutX="539.0" layoutY="97.0" promptText="Hizmet Bedeli" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
